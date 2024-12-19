@@ -3,7 +3,11 @@
 .nav-container{
   display: flex;
   justify-content: space-around;
-  margin-top: 60px;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  background-color: white;
+  width: 100%;
 }
 
 h4 {
@@ -18,22 +22,11 @@ h4 {
   height: auto;
 }
 
-.line-flex {
-display: flex;
-justify-content: center;
-margin-top: 15px;
-}
-
-.iphone-line{
-  width: 40%;
-  height: 5px;
-  background-color: #1d1e27;
-}
 
 </style>
 
-<main>
-  <div class="nav-container">
+<main class="nav-container">
+   
 
     <a class="icon-text-flex">
       <img src="assets\icons\target-arrow-svgrepo-com.svg" alt="">
@@ -59,10 +52,6 @@ margin-top: 15px;
       <img style="transform: scale(1.2);" src="assets\icons\person-crop-square-svgrepo-com.svg" alt="">
       <h4 style="color:#4abdc7;">Profile</h4>
     </a>
-  </div>
-  <div class="line-flex">
-    <div class="iphone-line"></div>
-  </div>
 </main>
 
 <router-outlet />
