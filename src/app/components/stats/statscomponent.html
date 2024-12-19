@@ -1,0 +1,272 @@
+
+<style>
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "emblems emblems"
+    "friends circles"
+    "exp exp"
+    "streak challenge"
+    "activities totalxp"
+    "banners adventures";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; 
+  gap: 11px; 
+  width: 100%;
+  margin-top: 15px;
+}
+
+.emblems {
+  grid-area: emblems;
+  border: 2px #e6f6f7 solid;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.friends {
+  grid-area: friends;
+}
+
+.circles {
+  grid-area: circles;
+}
+
+.exp {
+  grid-area: exp;
+}
+
+.streak {
+  grid-area: streak;
+}
+
+.challenge {
+  grid-area: challenge;
+}
+
+.activities {
+  grid-area: activities;
+}
+
+.totalxp {
+  grid-area: totalxp;
+}
+
+.banners {
+  grid-area: banners;
+}
+
+.adventures {
+  grid-area: adventures;
+}
+
+.stats {
+  height: 80px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #e6f6f7;
+}
+
+.big-stats {
+  height: 90px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.icon-text-flex {
+display: flex;
+height: 100%;
+width: 100%;
+margin-left: 15px;
+align-items: center;
+gap: 7px;
+}
+
+.text-flex {
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 100%;
+}
+
+.stats-value {
+color: #32525a;
+}
+
+.stats-label {
+  color: #abafaf;
+}
+
+h4, p {
+  margin:0;
+}
+
+.exp-flex {
+display: flex;
+flex-direction: column;
+gap: 5px;
+width: 70%;
+}
+
+.explevel {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.level-bar {
+    margin: 0;
+    background-color: #eedeac;
+    color: #f6a801;
+    padding: 2px 7px;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+
+  .outer-expbar {
+    width: 100%;
+    height: 14px;
+    border: 1px solid #f6a801;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+  .inner-expbar {
+    width: 66%;
+    height: 14px;
+    border-radius: 15px;
+    background-color: #f6a801;
+  }
+</style>
+
+<main>
+  <div class="grid-container">
+
+    <div class="emblems big-stats">
+      <div class="icon-flex">
+        <img src="assets\icons\square-star-svgrepo-com.svg" alt="">
+      </div>
+      <div class="icon-flex">
+        <img src="assets\icons\square-star-svgrepo-com (1).svg" alt="">
+      </div>
+      <div class="icon-flex">
+        <img src="assets\icons\square-star-svgrepo-com (2).svg" alt="">
+      </div>
+      <div class="icon-flex">
+        <img src="assets\icons\square-star-svgrepo-com (2).svg" alt="">
+      </div>
+    </div>
+
+    <div class="friends stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-sort-vertical-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">15</h4>
+          <h4 class="stats-label">Friends</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="circles stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-graph-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">4</h4>
+          <h4 class="stats-label">Circles</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp big-stats" style="background-color: #e6f6f7;">
+      <div class="icon-text-flex" style="gap:15px">
+        <img style="height: 60px;" src="assets\icons\star-circle-svgrepo-com.svg" alt="">
+        <div class="exp-flex">
+
+          <div class="explevel">
+            <p style="font-size: 18px; font-weight: 600;" class="stats-value">39200<span class="stats-label">/50000</span></p>
+            <div>
+              <p class="level-bar">LEVEL 20</p>
+            </div>
+          </div>
+
+          <div style="box-sizing: unset;" class="outer-expbar">
+            <div class="inner-expbar"></div>
+          </div>
+
+          <p class="stats-label" style="font-size: 13px;">11800 xp until new level</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="streak stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-alt-arrow-up-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">10</h4>
+          <h4 class="stats-label">Streak</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="challenge stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-transfer-diagonal-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">15</h4>
+          <h4 class="stats-label">Challenges</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="activities stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-double-alt-arrow-right-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">37</h4>
+          <h4 class="stats-label">Activities</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="totalxp stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-arrow-right-up-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">12972</h4>
+          <h4 class="stats-label">Total XP </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="Banners stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-transfer-vertical-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">4</h4>
+          <h4 class="stats-label">Banners</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="adventures stats">
+      <div class="icon-text-flex">
+        <img style="height: 50px;" src="assets\icons\round-double-alt-arrow-up-svgrepo-com.svg" alt="">
+        <div class="text-flex">
+          <h4 class="stats-value">17</h4>
+          <h4 class="stats-label">Adventures</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<router-outlet />

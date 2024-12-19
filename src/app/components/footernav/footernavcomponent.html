@@ -1,0 +1,68 @@
+
+<style>
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+h4 {
+  text-align: center;
+  margin: 6px 0 0 0;
+}
+
+.icon-text-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.line-flex {
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+
+.iphone-line{
+  width: 40%;
+  height: 5px;
+  background-color: #1d1e27;
+}
+
+</style>
+
+<main>
+  <div class="nav-container">
+
+    <a class="icon-text-flex">
+      <img src="assets\icons\target-arrow-svgrepo-com.svg" alt="">
+      <h4>Daily</h4>
+    </a>
+
+    <a class="icon-text-flex">
+      <img style="transform: scale(1.1);" src="assets\icons\compas-svgrepo-com.svg" alt="">
+      <h4>Venture</h4>
+    </a>
+
+    <a class="icon-text-flex">
+      <img src="assets\icons\house-svgrepo-com.svg" alt="">
+      <h4>Home</h4>
+    </a>
+
+    <a class="icon-text-flex">
+      <img src="assets\icons\message-square-lines-svgrepo-com (1)-cropped.svg" alt="">
+      <h4>Social</h4>
+    </a>
+
+    <a class="icon-text-flex">
+      <img style="transform: scale(1.2);" src="assets\icons\person-crop-square-svgrepo-com.svg" alt="">
+      <h4 style="color:#4abdc7;">Profile</h4>
+    </a>
+  </div>
+  <div class="line-flex">
+    <div class="iphone-line"></div>
+  </div>
+</main>
+
+<router-outlet />

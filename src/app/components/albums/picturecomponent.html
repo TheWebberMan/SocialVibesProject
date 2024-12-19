@@ -1,0 +1,64 @@
+
+<style>
+
+.text-flex{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px;
+  align-items: center;
+}
+
+.album-link, .album-titel{
+  margin: 5px 0;
+  height: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+
+</style>
+
+<main>
+<div class="album-flex">
+  <div class="text-flex">
+    <div>
+      <h3 class="album-titel">Orange stage</h3>
+    </div>
+    <div class="album-link">
+      <a href=""> See Album >></a>
+    </div>
+  </div>
+
+  <album-box [pictures]="album1"></album-box>
+  
+  <div class="text-flex">
+    <div>
+      <h3 class="album-titel">Magic Grounds</h3>
+    </div>
+    <div class="album-link">
+      <a href=""> See Album >></a>
+    </div>
+  </div>
+
+  <album-box [pictures]="album2"></album-box>
+
+  <div class="text-flex">
+    <div>
+      <h3 class="album-titel">Love for beer</h3>
+    </div>
+    <div class="album-link">
+      <a href=""> See Album >></a>
+    </div>
+  </div>
+  
+  <album-box [pictures]="album3"></album-box>
+  
+</div>
+
+
+</main>
+
+<router-outlet />

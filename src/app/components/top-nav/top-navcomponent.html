@@ -1,0 +1,58 @@
+
+<style>
+.nav {
+  height: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between; 
+}
+
+.left-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+}
+
+.right-flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+}
+
+.ingame-money {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 800;
+  color: #4abdc7;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+</style>
+
+<main>
+  <nav class="nav">
+    <div class="left-flex" style="margin-left:20px">
+     <img class="icon" src="assets\icons\notification-bell-blue.svg" alt="">
+     <img class="icon" src="assets\icons\message-square-lines-svgrepo-com.svg" alt="">
+    </div>
+    <div class="right-flex">
+     <div class="ingame-money">
+      <img src="assets\icons\coin-svgrepo-com.svg" alt="" (click)="addMoney()">
+      <span>{{ moneydata }}</span>
+     </div>
+      <img src="assets\icons\burger-menu-blue.svg" alt="">
+     </div>
+  </nav>
+
+    
+    
+    
+</main>
+
+<router-outlet />

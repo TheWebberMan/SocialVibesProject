@@ -1,0 +1,46 @@
+
+<style>
+
+.menu-bar {
+  
+  display: flex;
+  width: 100%;
+}
+
+.menu-box{
+  padding: 10px;
+  border: 2px #ffff66 solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-box.active-link {
+  border-bottom: 2px solid blue;
+}
+
+</style>
+
+<main>
+  <div class="menu-bar">
+    <!-- Skal bruges til active border-bottom    routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}"-->
+    
+    <div class="menu-box">
+      <img src="assets\icons\picture-svgrepo-com.svg" alt="">
+    </div>
+  
+  
+    <div class="menu-box">
+      <img src="assets\icons\goblin-head-svgrepo-com.svg" alt="">
+    </div>
+  
+  
+    <div class="menu-box">
+      <img style="transform: scale(1.4);" src="assets\icons\line-chart-svgrepo-com.svg" alt="">
+    </div>
+  
+  </div>
+   
+</main>
+
+<router-outlet />

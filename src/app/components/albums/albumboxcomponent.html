@@ -1,0 +1,45 @@
+
+<style>
+
+.album-box {
+  width: 100%;
+  height: auto;
+  background-color: #e6f6f7;
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: space-around;
+}
+
+.picture {
+  width: calc(33.33% - 6px); 
+  height: 97.31px; /*I know the height is off for tablets, but I have only made this version
+  mobile friendly without breaking points. height:auto; for tablets*/
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+</style>
+
+<main>
+  <div class="album-box">
+    
+      <div class="picture" *ngFor="let picture of pictures">
+        <img [src]="picture" alt="Album Picture" />
+      </div>
+    
+  </div>
+  
+
+
+</main>
+
+<router-outlet />
